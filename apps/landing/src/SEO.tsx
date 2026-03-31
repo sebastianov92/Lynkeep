@@ -1,6 +1,6 @@
 const BASE_URL = "https://karakeep.app";
 const DEFAULT_DESCRIPTION =
-  "Karakeep is the open-source bookmark manager for links, notes, and images. Automatically organize and tag your bookmarks with AI.";
+  "Lynkeep is the open-source bookmark manager for links, notes, and images. Automatically organize and tag your bookmarks with AI.";
 
 interface SEOProps {
   title?: string;
@@ -14,8 +14,8 @@ export default function SEO({
   path = "/",
 }: SEOProps) {
   const fullTitle = title
-    ? `${title} | Karakeep`
-    : "Karakeep - The Bookmark Everything App | Save, Organize & Tag with AI";
+    ? `${title} | Lynkeep`
+    : "Lynkeep - The Bookmark Everything App | Save, Organize & Tag with AI";
   const url = `${BASE_URL}${path}`;
 
   return (

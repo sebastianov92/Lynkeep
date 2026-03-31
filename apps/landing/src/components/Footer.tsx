@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 
 import { DOCS_LINK, GITHUB_LINK } from "../constants";
-import Logo from "/icons/karakeep-full.svg?url";
+import Logo from "/icons/lynkeep-full.svg?url";
 
 const currentYear = new Date().getFullYear();
 
@@ -10,7 +10,7 @@ const footerLinks = {
     { label: "Pricing", href: "/pricing", internal: true },
     { label: "Apps & Extensions", href: "/apps", internal: true },
     { label: "Try Demo", href: "https://try.karakeep.app" },
-    { label: "Karakeep Cloud", href: "https://cloud.karakeep.app" },
+    { label: "Lynkeep Cloud", href: "https://cloud.karakeep.app" },
   ],
   Resources: [
     { label: "Documentation", href: DOCS_LINK },
@@ -31,7 +31,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <img src={Logo} alt="Karakeep" className="w-32" />
+            <img src={Logo} alt="Lynkeep" className="w-32" />
             <p className="mt-3 text-sm text-gray-500">
               The Bookmark Everything App. Save, organize, and rediscover your
               content.

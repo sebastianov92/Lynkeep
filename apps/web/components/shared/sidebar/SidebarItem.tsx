@@ -35,14 +35,15 @@ export default function SidebarItem({
   onDragLeave?: React.DragEventHandler;
 }) {
   const currentPath = usePathname();
+  const isActive = path === currentPath;
   return (
     <li
       className={cn(
-        "relative flex justify-between rounded-lg text-sm transition-colors hover:bg-accent",
-        path == currentPath
-          ? "bg-accent/50 text-foreground"
-          : "text-muted-foreground",
-        dropHighlight && "bg-accent ring-2 ring-primary",
+        "group relative flex justify-between rounded-lg text-sm transition-all duration-200",
+        isActive
+          ? "bg-primary/10 text-primary font-medium glow-sm"
+          : "text-muted-foreground hover:bg-accent/50 hover:text-foreground",
+        dropHighlight && "bg-primary/15 ring-2 ring-primary/50",
         className,
       )}
       style={style}
@@ -51,6 +52,9 @@ export default function SidebarItem({
       onDragEnter={onDragEnter}
       onDragLeave={onDragLeave}
     >
+      {isActive && (
+        <div className="absolute left-0 top-1/2 h-5 w-[3px] -translate-y-1/2 rounded-r-full gradient-primary" />
+      )}
       <div className="flex-1">
         {collapseButton}
         <Link

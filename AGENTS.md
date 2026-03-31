@@ -1,10 +1,10 @@
-# Karakeep Project Overview
+# Lynkeep Project Overview
 
-This document provides context about the Karakeep project for the different agents.
+This document provides context about the Lynkeep project (fork of Karakeep) for the different agents.
 
 ## Project Overview
 
-Karakeep is a monorepo project managed with Turborepo. It appears to be a web application with a focus on collecting and organizing information, possibly a bookmarking or "read-it-later" service. The project is built with a modern tech stack, including:
+Lynkeep is a monorepo project managed with Turborepo. It is a self-hostable bookmark-everything app for saving links, notes, and images with AI-powered tagging. The project is built with a modern tech stack, including:
 
 - **Frontend:** Next.js, React, TypeScript, Tailwind CSS
 - **Backend:** Hono (a lightweight web framework), tRPC
@@ -18,11 +18,11 @@ The project is organized into `apps` and `packages`:
 ### Applications (`apps/`)
 
 - **`web`:** The main web application, built with Next.js.
-- **`browser-extension`:** A browser extension, likely for saving content to karakeep.
+- **`browser-extension`:** A browser extension for saving content to Lynkeep.
 - **`cli`:** A command-line interface for interacting with the service.
 - **`landing`:** A landing page for the project.
 - **`mobile`:** A mobile application (details unknown).
-- **`mcp`:** The Model Context Protocol (MCP) server to communicate with Karakeep.
+- **`mcp`:** The Model Context Protocol (MCP) server to communicate with Lynkeep.
 - **`workers`:** Background workers for processing tasks.
 
 ### Packages (`packages/`)

@@ -5,16 +5,16 @@ import { Menu, X } from "lucide-react";
 import { Link } from "react-router";
 
 import { CLOUD_SIGNUP_LINK, DOCS_LINK, GITHUB_LINK } from "./constants";
-import Logo from "/icons/karakeep-full.svg?url";
+import Logo from "/icons/lynkeep-full.svg?url";
 
 export default function NavBar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-gray-200/50 bg-white/70 backdrop-blur-xl">
+    <nav className="sticky top-0 z-50 border-b border-purple-200/30 bg-white/70 backdrop-blur-xl">
       <div className="container flex items-center justify-between px-4 py-3">
         <Link to="/">
-          <img src={Logo} alt="logo" className="w-36" />
+          <img src={Logo} alt="Lynkeep" className="w-36" />
         </Link>
 
         {/* Desktop navigation */}

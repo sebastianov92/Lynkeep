@@ -1,5 +1,5 @@
 import { redirect } from "next/dist/client/components/navigation";
-import KarakeepLogo from "@/components/KarakeepIcon";
+import LynkeepLogo from "@/components/LynkeepLogo";
 import SignUpForm from "@/components/signup/SignUpForm";
 import { getServerAuthSession } from "@/server/auth";
 
@@ -28,7 +28,7 @@ export default async function SignUpPage({
     <div className="flex min-h-screen items-center justify-center bg-background px-4 py-12 sm:px-6 lg:px-8">
       <div className="w-full max-w-md space-y-8">
         <div className="flex items-center justify-center">
-          <KarakeepLogo height={80} />
+          <LynkeepLogo height={80} />
         </div>
         <SignUpForm redirectUrl={redirectUrl} />
       </div>

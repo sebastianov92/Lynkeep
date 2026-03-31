@@ -14,7 +14,7 @@ const pricingTiers = [
     monthlyPrice: "$0",
     yearlyPrice: "$0",
     period: "",
-    description: "Trying Karakeep out",
+    description: "Trying Lynkeep out",
     features: [
       "10 bookmarks",
       "20MB storage",
@@ -273,7 +273,7 @@ export default function Pricing() {
     <>
       <SEO
         title="Pricing"
-        description="Simple, transparent pricing for Karakeep. Free plan available. Pro plan at $4/month or $40/year with AI tagging, full-text search, and 50GB storage. Self-hosted option is free forever."
+        description="Simple, transparent pricing for Lynkeep. Free plan available. Pro plan at $4/month or $40/year with AI tagging, full-text search, and 50GB storage. Self-hosted option is free forever."
         path="/pricing"
       />
       <div className="container mx-auto">

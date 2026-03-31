@@ -13,7 +13,7 @@ export default function OpenSource() {
           Open Source & Self-Hostable
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-400">
-          Karakeep is fully open source. Run it on your own server with Docker,
+          Lynkeep is fully open source. Run it on your own server with Docker,
           keep full control of your data, and contribute to the project.
         </p>
 

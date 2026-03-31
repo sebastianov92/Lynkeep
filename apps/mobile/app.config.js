@@ -4,14 +4,14 @@ export default {
   expo: {
     ...(IS_DEV
       ? {
-          name: "Karakeep (Dev)",
-          scheme: "karakeep-dev",
+          name: "Lynkeep (Dev)",
+          scheme: "lynkeep-dev",
         }
       : {
-          name: "Karakeep",
-          scheme: "karakeep",
+          name: "Lynkeep",
+          scheme: "lynkeep",
         }),
-    slug: "hoarder",
+    slug: "lynkeep",
     version: "1.9.2",
     orientation: "portrait",
     icon: {
@@ -94,7 +94,7 @@ export default {
         "expo-image-picker",
         {
           photosPermission:
-            "The app access your photo gallary on your request to hoard them.",
+            "The app accesses your photo gallery on your request to save them.",
         },
       ],
       [

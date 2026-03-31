@@ -1,6 +1,6 @@
 {
-  "name": "Karakeep",
-  "short_name": "Karakeep",
+  "name": "Lynkeep",
+  "short_name": "Lynkeep",
   "icons": [
     {
       "src": "/icons/logo-16.png",
@@ -21,5 +21,7 @@
   ],
   "start_url": "/",
   "display": "standalone",
-  "orientation": "portrait"
+  "orientation": "portrait",
+  "theme_color": "#7C3AED",
+  "background_color": "#0F0D1A"
 }

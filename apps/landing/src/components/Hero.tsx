@@ -11,15 +11,15 @@ export default function Hero() {
       <div className="animate-fade-in-up mx-auto max-w-5xl text-center">
         <h1 className="text-3xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
           The{" "}
-          <span className="bg-gradient-to-r from-purple-600 to-red-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-purple-600 to-violet-500 bg-clip-text text-transparent">
             Bookmark Everything
           </span>{" "}
           App
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600">
-          Quickly save links, notes, and images and Karakeep will automatically
+          Quickly save links, notes, and images and Lynkeep will automatically
           tag them for you using AI for faster retrieval. Built for the data
-          hoarders out there!
+          collectors out there!
         </p>
         <div className="mt-6 flex items-center justify-center">
           <a
@@ -62,11 +62,11 @@ export default function Hero() {
       {/* Hero screenshot with browser mockup */}
       <div className="animate-fade-in relative mx-auto mt-16 max-w-screen-2xl px-4">
         {/* Glow effect */}
-        <div className="animate-glow-pulse absolute -inset-4 rounded-3xl bg-gradient-to-r from-purple-400/20 via-pink-400/20 to-red-400/20 blur-3xl" />
+        <div className="animate-glow-pulse absolute -inset-4 rounded-3xl bg-gradient-to-r from-purple-400/20 via-violet-400/20 to-fuchsia-400/20 blur-3xl" />
 
         <img
           src={heroImage}
-          alt="Karakeep dashboard"
+          alt="Lynkeep dashboard"
           className="relative w-full"
         />
       </div>

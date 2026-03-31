@@ -46,13 +46,13 @@ const browserExtensions: Listing[] = [
 const communityProjects: Listing[] = [
   {
     name: "Raycast Extension",
-    description: "Manage your Karakeep bookmarks directly from Raycast.",
+    description: "Manage your Lynkeep bookmarks directly from Raycast.",
     url: "https://www.raycast.com/luolei/karakeep",
     badge: raycastIcon,
   },
   {
     name: "Obsidian Plugin",
-    description: "Sync your Karakeep bookmarks to Obsidian as markdown notes.",
+    description: "Sync your Lynkeep bookmarks to Obsidian as markdown notes.",
     url: "https://obsidian.md/plugins?id=hoarder-sync",
     badge: obsidianIcon,
   },
@@ -103,7 +103,7 @@ export default function Apps() {
     <>
       <SEO
         title="Apps & Extensions"
-        description="Download Karakeep for iOS, Android, Chrome, and Firefox. Save bookmarks from any device with our mobile apps and browser extensions."
+        description="Download Lynkeep for iOS, Android, Chrome, and Firefox. Save bookmarks from any device with our mobile apps and browser extensions."
         path="/apps"
       />
       <div className="container mx-auto pb-16">
@@ -112,7 +112,7 @@ export default function Apps() {
             Apps & Extensions
           </h1>
           <p className="mt-3 max-w-2xl text-base text-gray-600 sm:text-lg">
-            Use Karakeep anywhere with our mobile apps and browser extensions.
+            Use Lynkeep anywhere with our mobile apps and browser extensions.
           </p>
           <div className="mt-10 space-y-6">
             <ListingSection
@@ -127,7 +127,7 @@ export default function Apps() {
             />
             <ListingSection
               title="Community Projects"
-              description="Integrations built by the Karakeep community."
+              description="Integrations built by the Lynkeep community."
               items={communityProjects}
             />
           </div>

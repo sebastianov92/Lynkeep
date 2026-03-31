@@ -18,9 +18,9 @@ export default async function Sidebar({
   const { t } = await useTranslation();
 
   return (
-    <aside className="flex h-[calc(100vh-64px)] w-60 flex-col gap-5 border-r p-4">
+    <aside className="flex h-[calc(100vh-64px)] w-60 flex-col gap-5 border-r border-border/50 bg-sidebar p-4 transition-colors">
       <div>
-        <ul className="space-y-2 text-sm">
+        <ul className="space-y-1 text-sm">
           {items(t).map((item) => (
             <SidebarItem
               key={item.name}
