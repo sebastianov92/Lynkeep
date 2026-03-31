@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="animate-fade-in-up mx-auto max-w-5xl text-center">
         <h1 className="text-3xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
           The{" "}
-          <span className="bg-gradient-to-r from-purple-600 to-violet-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
             Bookmark Everything
           </span>{" "}
           App
@@ -62,7 +62,7 @@ export default function Hero() {
       {/* Hero screenshot with browser mockup */}
       <div className="animate-fade-in relative mx-auto mt-16 max-w-screen-2xl px-4">
         {/* Glow effect */}
-        <div className="animate-glow-pulse absolute -inset-4 rounded-3xl bg-gradient-to-r from-purple-400/20 via-violet-400/20 to-fuchsia-400/20 blur-3xl" />
+        <div className="animate-glow-pulse absolute -inset-4 rounded-3xl bg-gradient-to-r from-blue-500/20 via-cyan-400/15 to-teal-400/10 blur-3xl" />
 
         <img
           src={heroImage}

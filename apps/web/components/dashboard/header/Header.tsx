@@ -13,14 +13,14 @@ export default async function Header() {
   }
 
   return (
-    <header className="sticky left-0 right-0 top-0 z-50 flex h-16 items-center justify-between overflow-x-auto overflow-y-hidden border-b border-border/50 bg-background/80 p-4 backdrop-blur-xl">
+    <header className="glass sticky left-0 right-0 top-0 z-50 flex h-16 items-center justify-between overflow-x-auto overflow-y-hidden border-b-0 p-4">
       <div className="hidden items-center sm:flex">
         <Link href={"/dashboard/bookmarks"} className="w-56">
           <LynkeepLogo height={38} />
         </Link>
       </div>
       <div className="flex flex-1 gap-2">
-        <SearchInput className="rounded-lg border-border/50 bg-muted/50 backdrop-blur-sm transition-colors focus-within:border-primary/30 focus-within:bg-background" />
+        <SearchInput className="glass-card rounded-xl border-0 transition-all duration-300 focus-within:glow-sm focus-within:ring-1 focus-within:ring-primary/20" />
         <GlobalActions />
       </div>
       <div className="flex items-center">

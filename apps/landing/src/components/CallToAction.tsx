@@ -6,11 +6,11 @@ import { CLOUD_SIGNUP_LINK, DEMO_LINK } from "../constants";
 export default function CallToAction() {
   return (
     <section className="px-4 py-16 sm:py-24">
-      <div className="mx-auto max-w-4xl overflow-hidden rounded-2xl bg-gradient-to-r from-purple-600 to-violet-500 px-8 py-16 text-center shadow-2xl sm:px-16">
+      <div className="mx-auto max-w-4xl overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-600 px-8 py-16 text-center shadow-2xl sm:px-16">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
           Start saving today
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-lg text-purple-100">
+        <p className="mx-auto mt-4 max-w-xl text-lg text-blue-100">
           Join thousands of users who trust Lynkeep to save and organize their
           digital life.
         </p>
@@ -20,7 +20,7 @@ export default function CallToAction() {
             target="_blank"
             rel="noreferrer"
             className={cn(
-              "w-full gap-2 bg-white px-8 text-purple-700 hover:bg-gray-100 sm:w-auto",
+              "w-full gap-2 bg-white px-8 text-blue-700 hover:bg-gray-100 sm:w-auto",
               buttonVariants({ size: "lg" }),
             )}
           >

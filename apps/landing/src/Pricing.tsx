@@ -145,7 +145,7 @@ function PricingCards({
         key={tier.name}
         className={cn(
           "relative rounded-2xl border bg-white p-8 shadow-sm",
-          tier.popular && "border-purple-500 shadow-lg",
+          tier.popular && "border-blue-500 shadow-lg",
         )}
       >
         <div className="text-center">

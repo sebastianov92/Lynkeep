@@ -11,7 +11,7 @@ export default function NavBar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-purple-200/30 bg-white/70 backdrop-blur-xl">
+    <nav className="sticky top-0 z-50 border-b border-gray-200/30 bg-white/70 backdrop-blur-xl">
       <div className="container flex items-center justify-between px-4 py-3">
         <Link to="/">
           <img src={Logo} alt="Lynkeep" className="w-36" />

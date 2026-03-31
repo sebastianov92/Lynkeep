@@ -39,11 +39,11 @@ export default function SidebarItem({
   return (
     <li
       className={cn(
-        "group relative flex justify-between rounded-lg text-sm transition-all duration-200",
+        "group relative flex justify-between rounded-lg text-sm transition-all duration-300 ease-out",
         isActive
-          ? "bg-primary/10 text-primary font-medium glow-sm"
-          : "text-muted-foreground hover:bg-accent/50 hover:text-foreground",
-        dropHighlight && "bg-primary/15 ring-2 ring-primary/50",
+          ? "glass-card text-foreground font-medium glow-active"
+          : "text-muted-foreground hover:text-foreground hover:bg-accent/40",
+        dropHighlight && "glass-card ring-2 ring-primary/40",
         className,
       )}
       style={style}
@@ -53,18 +53,26 @@ export default function SidebarItem({
       onDragLeave={onDragLeave}
     >
       {isActive && (
-        <div className="absolute left-0 top-1/2 h-5 w-[3px] -translate-y-1/2 rounded-r-full gradient-primary" />
+        <div className="absolute left-0 top-1/2 h-5 w-[3px] -translate-y-1/2 rounded-r-full gradient-accent" />
       )}
       <div className="flex-1">
         {collapseButton}
         <Link
           href={path}
           className={cn(
-            "flex items-center gap-x-2 rounded-[inherit] px-3 py-2",
+            "flex items-center gap-x-2 rounded-[inherit] px-3 py-2 transition-transform duration-200",
+            isActive && "translate-x-0.5",
             linkClassName,
           )}
         >
-          {logo}
+          <span
+            className={cn(
+              "transition-colors duration-200",
+              isActive && "text-primary",
+            )}
+          >
+            {logo}
+          </span>
           <span title={name} className="line-clamp-1 break-all">
             {name}
           </span>

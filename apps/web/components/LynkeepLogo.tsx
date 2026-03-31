@@ -9,11 +9,11 @@ export default function LynkeepLogo({ height }: { height: number }) {
       >
         <defs>
           <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="hsl(265, 84%, 60%)" />
-            <stop offset="100%" stopColor="hsl(290, 80%, 55%)" />
+            <stop offset="0%" stopColor="hsl(210, 100%, 55%)" />
+            <stop offset="100%" stopColor="hsl(200, 90%, 48%)" />
           </linearGradient>
         </defs>
-        {/* Icon */}
+        {/* Icon — glass bookmark */}
         <rect
           x="8"
           y="10"
@@ -21,7 +21,7 @@ export default function LynkeepLogo({ height }: { height: number }) {
           height="100"
           rx="14"
           fill="url(#logoGrad)"
-          opacity="0.15"
+          opacity="0.12"
         />
         <rect
           x="14"
@@ -30,7 +30,7 @@ export default function LynkeepLogo({ height }: { height: number }) {
           height="88"
           rx="10"
           fill="url(#logoGrad)"
-          opacity="0.9"
+          opacity="0.85"
         />
         <path d="M30 28h36v62l-18-12-18 12V28z" fill="white" opacity="0.95" />
         <rect
@@ -40,7 +40,7 @@ export default function LynkeepLogo({ height }: { height: number }) {
           height="62"
           rx="2"
           fill="white"
-          opacity="0.3"
+          opacity="0.2"
         />
         {/* Text */}
         <text
