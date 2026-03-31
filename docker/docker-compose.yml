@@ -1,11 +1,11 @@
 services:
   web:
-    image: ghcr.io/sebastianov92/lynkeep:${LYNKEEP_VERSION:-release}
+    build:
+      dockerfile: docker/Dockerfile
+      context: ..
+      target: aio
     restart: unless-stopped
     volumes:
-      # By default, the data is stored in a docker volume called "data".
-      # If you want to mount a custom directory, change the volume mapping to:
-      # - /path/to/your/directory:/data
       - data:/data
     ports:
       - 3000:3000
