@@ -48,41 +48,46 @@
   }
 
   .dark {
-    /* Obsidian-inspired: true dark, slightly warm */
-    --background: 220 16% 8%;
-    --foreground: 220 10% 85%;
+    /* Neutral true-dark, matching screenshot (#0F0F11 - #111113 range) */
+    --background: 240 5% 6%;
+    --foreground: 0 0% 88%;
 
-    --card: 220 16% 11%;
-    --card-foreground: 220 10% 85%;
+    --card: 240 4% 9%;
+    --card-foreground: 0 0% 88%;
 
-    --popover: 220 16% 11%;
-    --popover-foreground: 220 10% 85%;
+    --popover: 240 4% 9%;
+    --popover-foreground: 0 0% 88%;
 
     --primary: 210 100% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 14% 15%;
-    --secondary-foreground: 220 10% 75%;
+    --secondary: 240 3% 13%;
+    --secondary-foreground: 0 0% 72%;
 
-    --muted: 220 14% 13%;
-    --muted-foreground: 220 8% 50%;
+    --muted: 240 3% 11%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 220 16% 16%;
+    --accent: 240 4% 14%;
     --accent-foreground: 210 60% 70%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 14% 16%;
-    --input: 220 14% 16%;
+    --border: 240 3% 14%;
+    --input: 240 3% 14%;
     --ring: 210 100% 60%;
 
     /* Glass tokens — dark (the magic) */
-    --glass-bg: 220 20% 13% / 0.55;
-    --glass-border: 220 15% 28% / 0.3;
-    --glass-highlight: 220 20% 25% / 0.15;
-    --sidebar-bg: 220 18% 9%;
+    --glass-bg: 240 4% 10% / 0.55;
+    --glass-border: 0 0% 100% / 0.06;
+    --glass-highlight: 0 0% 100% / 0.03;
+    --sidebar-bg: 240 5% 7%;
     --glow: 210 100% 60%;
+
+    /* Gradient background for main content area */
+    --gradient-start: 240 5% 6%;
+    --gradient-mid: 260 8% 8%;
+    --gradient-end: 240 5% 6%;
   }
 }
 
@@ -140,6 +145,15 @@
     box-shadow:
       inset 0 1px 0 0 hsla(var(--glass-highlight)),
       0 8px 32px -8px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Dark gradient background for main content area */
+  .bg-dark-gradient {
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 40%, hsl(270 15% 12% / 0.4), transparent),
+      radial-gradient(ellipse 60% 50% at 80% 20%, hsl(210 15% 10% / 0.3), transparent),
+      radial-gradient(ellipse 50% 40% at 50% 80%, hsl(250 10% 10% / 0.25), transparent),
+      hsl(var(--background));
   }
 
   /* Accent gradient for active indicators */
